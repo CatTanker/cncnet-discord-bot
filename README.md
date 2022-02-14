@@ -27,6 +27,14 @@ Setting up
 6. Run the script again (see step 4). The bot should connect to IRC and Discord.
 7. Set the needed channels via `!config` command.
 
+Hosting with Heroku
+-------
+1. Complete the steps listed above
+2. Opem Heroku and create a new app
+3. Remove config.json from the `.gitignore` file
+4. Create a file called `Procfile` which contains: `worker: python discord_cncnet_bot.py`
+5. Install the Heroku CLI and follow the deploy instructions using git
+6. Your bot should appear online
 
 Credits
 -------
